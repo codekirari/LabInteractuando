@@ -6,6 +6,35 @@
     <title>Carrito de Compras</title>
 </head>
 <body>
+    <h1>Carrito de Compras🛒</h1>
+    <h2>Productos: </h2>
     
+    <p>
+        <Strong>Producto 1:</Strong> Libro - $<span id="precio1">80</span>
+        <button onclick="agregarAlCarrito('Libro', 80)">Agregar al Carrito</button>
+    </p>
+
+    <p>
+        <Strong>Producto 2:</Strong> Marcadores - $<span id="precio2">50</span>
+        <button onclick="agregarAlCarrito('Marcadores', 50)">Agregar al Carrito</button>
+    </p>
+
+        <p>
+        <Strong>Producto 1:</Strong> Cuaderno - $<span id="precio2">20</span>
+        <button onclick="agregarAlCarrito('Cuaderno', 20)">Agregar al Carrito</button>
+    </p>
+
+    <hr>
+    <!-- •Actualice un contador de items totales (<span id="total-items">0</span>)
+    •Sume el precio al total acumulado (<span id="total-precio">0</span> -->
+
+    <h3>Resumen del Carrito</h3>
+    <p>Total de items: <span id="total-items">0</span></p>
+    <p>Total a pagar: $<span id="total-precio">0</span></p>
+
+    <button onclick="vaciarCarrito()">Vaciar carrito</button>
+
+<script src="carrito.js"></script>
+
 </body>
 </html>
